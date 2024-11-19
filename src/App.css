@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: rgb(249, 115, 22);
+    --primary-light: rgb(251, 146, 60);
+    --primary-dark: rgb(234, 88, 12);
+    --primary-50: rgb(255, 247, 237);
+}
+
+.logo {
+    border-radius: 6px;
+}
+
+/* General Styling */
+body {
+    @apply font-georgia;
+}
+
+/* Hero Section */
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+.hero-content h1 {
+    @apply text-hero-title font-bold text-white;
+}
+
+.hero-content p {
+    @apply text-hero-subtitle text-white;
+}
+
+.primary-button {
+    @apply bg-orange-500 text-white px-8 py-3 rounded-full font-semibold text-body;
+}
+
+.primary-button:hover {
+    @apply bg-orange-600;
+}
+
+/* Stats Section */
+.stat-card {
+    @apply bg-white p-6 rounded-2xl shadow-lg transition-all duration-300 text-body;
+}
+
+.stat-card h3 {
+    @apply text-section-title font-bold text-gray-800;
+}
+
+.stat-card p {
+    @apply text-body text-gray-600;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.feature-card {
+    @apply bg-white p-6 rounded-2xl transition-all duration-300 text-body;
+}
+
+.feature-card h3 {
+    @apply text-section-title font-bold text-gray-800;
+}
+
+.feature-card:hover {
+    @apply shadow-lg;
+    transform: translateY(-5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        @apply text-4xl;
+    }
+}
