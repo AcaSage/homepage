@@ -4,10 +4,12 @@ import './App.css';
 import BgImage from './assets/bg.jpeg';
 import DashBoard from './assets/db.png';
 import FD from './assets/anya.jpeg';
+import PodCast from './assets/db2.png';
 import { Book, Users, Award, ArrowRight, Star, Heart, Sun, Moon, Highlighter, ShieldCheck,
     Brain, Globe, ChevronDown, Send, Check, Linkedin, Youtube, Github, Rocket
 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import MoodTracker   from "./components/MoodTracker.jsx";
 
 const translations = {
     English: {
@@ -552,6 +554,9 @@ const AcaSagePage = () => {
                     </div>
                 </section>
 
+                {/* Mood Tracker */}
+                <MoodTracker language={language} />
+
                 {/* App Preview */}
                 <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
                     <div className="max-w-7xl mx-auto px-4">
@@ -592,17 +597,17 @@ const AcaSagePage = () => {
                                 <div
                                     className="absolute -inset-1 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-200"></div>
                                 <img
-                                    src={DashBoard}
+                                    src={PodCast}
                                     alt="AcaSage Dashboard"
                                     className="rounded-lg shadow-2xl relative dark:shadow-gray-900/30"
                                 />
                             </div>
                             <div className="mt-8 grid md:grid-cols-4 gap-4">
                                 {[
-                                    "Smart study plan",
-                                    "Wellness support",
-                                    "Podcast mode",
-                                    "Peer review"
+                                    "Peer profile",
+                                    "Categorisation",
+                                    "Visual summary",
+                                    "Privacy control"
                                 ].map((feature, index) => (
                                     <div key={index} className="flex items-center gap-2">
                                         <Check className="w-10 h-10 text-green-500"/>
