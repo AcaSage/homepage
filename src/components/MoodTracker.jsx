@@ -401,6 +401,89 @@ const podcastTranslations = {
     },
 };
 
+const goalTranslations = {
+    English: {
+        title: "Today's challenges",
+        challenges: [
+            { task: "Complete 3 focused study sessions", xp: 50, completed: false },
+            { task: "Write 500 meaningful words", xp: 30, completed: true },
+            { task: "Review 2 peer-submitted papers", xp: 40, completed: false },
+            { task: "Participate in a group study session", xp: 20, completed: true },
+            { task: "Take a mindful meditation break", xp: 25, completed: false },
+        ],
+    },
+    Español: {
+        title: "Retos de hoy",
+        challenges: [
+            { task: "Completa 3 sesiones de estudio enfocadas", xp: 50, completed: false },
+            { task: "Escribe 500 palabras significativas", xp: 30, completed: true },
+            { task: "Revisa 2 trabajos enviados por compañeros", xp: 40, completed: false },
+            { task: "Participa en una sesión de estudio grupal", xp: 20, completed: true },
+            { task: "Tómate un descanso de meditación consciente", xp: 25, completed: false },
+        ],
+    },
+    Français: {
+        title: "Défis d'aujourd'hui",
+        challenges: [
+            { task: "Réalisez 3 sessions d'étude concentrées", xp: 50, completed: false },
+            { task: "Écrivez 500 mots significatifs", xp: 30, completed: true },
+            { task: "Examinez 2 articles soumis par vos pairs", xp: 40, completed: false },
+            { task: "Participez à une session d'étude en groupe", xp: 20, completed: true },
+            { task: "Prenez une pause méditative en pleine conscience", xp: 25, completed: false },
+        ],
+    },
+    ภาษาไทย: {
+        title: "ความท้าทายสำหรับวันนี้",
+        challenges: [
+            { task: "ทำการเรียนที่มีสมาธิ 3 ครั้ง", xp: 50, completed: false },
+            { task: "เขียนคำที่มีความหมาย 500 คำ", xp: 30, completed: true },
+            { task: "ทบทวนเอกสารที่เพื่อนส่งมา 2 ชิ้น", xp: 40, completed: false },
+            { task: "เข้าร่วมกลุ่มศึกษา", xp: 20, completed: true },
+            { task: "พักสมาธิอย่างมีสติ", xp: 25, completed: false },
+        ],
+    },
+    العربية: {
+        title: "تحديات اليوم",
+        challenges: [
+            { task: "أكمل 3 جلسات دراسية مركزة", xp: 50, completed: false },
+            { task: "اكتب 500 كلمة ذات مغزى", xp: 30, completed: true },
+            { task: "قم بمراجعة ورقتين مقدمتين من الزملاء", xp: 40, completed: false },
+            { task: "شارك في جلسة دراسة جماعية", xp: 20, completed: true },
+            { task: "خذ استراحة للتأمل الواعي", xp: 25, completed: false },
+        ],
+    },
+    中文: {
+        title: "今天的挑战",
+        challenges: [
+            { task: "完成3次专注学习", xp: 50, completed: false },
+            { task: "写500个有意义的字", xp: 30, completed: true },
+            { task: "审阅2篇同学提交的论文", xp: 40, completed: false },
+            { task: "参加一个小组学习会议", xp: 20, completed: true },
+            { task: "进行一次正念冥想休息", xp: 25, completed: false },
+        ],
+    },
+    Deutsch: {
+        title: "Heutige Herausforderungen",
+        challenges: [
+            { task: "Absolvieren Sie 3 fokussierte Lerneinheiten", xp: 50, completed: false },
+            { task: "Schreiben Sie 500 bedeutungsvolle Wörter", xp: 30, completed: true },
+            { task: "Überprüfen Sie 2 von Kollegen eingereichte Arbeiten", xp: 40, completed: false },
+            { task: "Nehmen Sie an einer Gruppenlernsitzung teil", xp: 20, completed: true },
+            { task: "Machen Sie eine achtsame Meditationspause", xp: 25, completed: false },
+        ],
+    },
+    Italiano: {
+        title: "Sfide di oggi",
+        challenges: [
+            { task: "Completa 3 sessioni di studio mirate", xp: 50, completed: false },
+            { task: "Scrivi 500 parole significative", xp: 30, completed: true },
+            { task: "Revisione di 2 lavori inviati dai colleghi", xp: 40, completed: false },
+            { task: "Partecipa a una sessione di studio di gruppo", xp: 20, completed: true },
+            { task: "Fai una pausa di meditazione consapevole", xp: 25, completed: false },
+        ],
+    },
+};
+
 const PodcastInterface = ({ language = "English" }) => {
     const [previewText, setPreviewText] = useState("");
     const [selectedLanguage, setSelectedLanguage] = useState("British English");
@@ -538,45 +621,49 @@ const MoodTracker = ({language = "English"}) => {
     return (
         <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
             <div className="max-w-7xl mx-auto px-4 space-y-16">
-                {/* Mood Tracker */}
                 <div>
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{t.title}</h2>
-                        <p className="text-2xl text-gray-600 dark:text-gray-300">{t.subtitle}</p>
+                    <div className="text-center mb-8 sm:mb-12">
+                        <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">{t.title}</h2>
+                        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300">{t.subtitle}</p>
                     </div>
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg dark:shadow-gray-900/30">
-                        <h3 className="text-2xl font-semibold mb-8 text-gray-900 dark:text-white text-center">{t.question}</h3>
-                        {Object.entries(t.moods).map(([type, moods]) => (
-                            <div key={type} className="mood-grid flex justify-around mb-8">
-                                {moods.map((mood) => (
-                                    <motion.button
-                                        key={mood.name}
-                                        onClick={() => handleMoodSelect(mood)}
-                                        className={`relative flex flex-col items-center gap-3 p-4 rounded-xl transition-all w-full md:w-48 ${
-                                            selectedMood?.name === mood.name
-                                                ? 'bg-green-100 text-green-600'
-                                                : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
-                                        }`}
-                                        whileHover={{scale: 1.05}}
-                                        whileTap={{scale: 0.95}}
-                                    >
-                                        <span className="text-4xl">{mood.emoji}</span>
-                                        <span className="text-lg font-medium">{mood.name}</span>
-                                        {selectedMood?.name === mood.name && showXP && (
-                                            <motion.div
-                                                initial={{opacity: 0, y: 20}}
-                                                animate={{opacity: 1, y: -20}}
-                                                exit={{opacity: 0}}
-                                                className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
-                                            >
-                                                <Trophy className="w-7 h-7"/>
-                                                <span className="text-lg font-medium">+{mood.xp} XP</span>
-                                            </motion.div>
-                                        )}
-                                    </motion.button>
-                                ))}
-                            </div>
-                        ))}
+                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg dark:shadow-gray-900/30">
+                        <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-gray-900 dark:text-white text-center">{t.question}</h3>
+                        <div className="space-y-6 sm:space-y-8">
+                            {Object.entries(t.moods).map(([type, moods]) => (
+                                <div
+                                    key={type}
+                                    className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4"
+                                >
+                                    {moods.map((mood) => (
+                                        <motion.button
+                                            key={mood.name}
+                                            onClick={() => handleMoodSelect(mood)}
+                                            className={`relative flex flex-col items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl transition-all ${
+                                                selectedMood?.name === mood.name
+                                                    ? 'bg-green-100 text-green-600'
+                                                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                                            }`}
+                                            whileHover={{ scale: 1.05 }}
+                                            whileTap={{ scale: 0.95 }}
+                                        >
+                                            <span className="text-3xl sm:text-4xl">{mood.emoji}</span>
+                                            <span className="text-sm sm:text-lg font-medium">{mood.name}</span>
+                                            {selectedMood?.name === mood.name && showXP && (
+                                                <motion.div
+                                                    initial={{ opacity: 0, y: 20 }}
+                                                    animate={{ opacity: 1, y: -20 }}
+                                                    exit={{ opacity: 0 }}
+                                                    className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
+                                                >
+                                                    <Trophy className="w-5 sm:w-7 h-5 sm:h-7" />
+                                                    <span className="text-sm sm:text-lg font-medium">+{mood.xp} XP</span>
+                                                </motion.div>
+                                            )}
+                                        </motion.button>
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 
@@ -596,15 +683,9 @@ const MoodTracker = ({language = "English"}) => {
                             className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg"
                         >
                             <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-                                Today's challenges
+                                {goalTranslations[language].title}
                             </h3>
-                            {[
-                                {task: "Complete 3 focused study sessions", xp: 50, completed: false},
-                                {task: "Write 500 meaningful words", xp: 30, completed: true},
-                                {task: "Review 2 peer-submitted papers ", xp: 40, completed: false},
-                                {task: "Participate in a group study session", xp: 20, completed: true},
-                                {task: "Take a mindful meditation break", xp: 25, completed: false}
-                            ].map((challenge, index) => (
+                            {goalTranslations[language].challenges.map((challenge, index) => (
                                 <div
                                     key={index}
                                     className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
@@ -614,18 +695,14 @@ const MoodTracker = ({language = "English"}) => {
                                     }`}
                                 >
                                     <div className="flex items-center gap-3">
-                                        <span className="text-gray-800 dark:text-gray-200">
-                                            {challenge.task}
-                                        </span>
-                                                        </div>
-                                                        <div className="flex items-center gap-3">
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">
-                                            +{challenge.xp} XP
-                                        </span>
+                                        <span className="text-gray-800 dark:text-gray-200">{challenge.task}</span>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-sm text-gray-500 dark:text-gray-400">+{challenge.xp} XP</span>
                                         {challenge.completed ? (
-                                            <Check className="w-5 h-5 text-green-500"/>
+                                            <Check className="w-5 h-5 text-green-500" />
                                         ) : (
-                                            <Clock className="w-5 h-5 text-gray-400 dark:text-gray-500"/>
+                                            <Clock className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                                         )}
                                     </div>
                                 </div>
