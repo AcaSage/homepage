@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./index.html",
-    './src/**/*.{js,jsx}',
+    './src/**/*.{js,jsx}',  './public/index.html'
   ],
   theme: {
     extend: {
@@ -10,10 +11,18 @@ module.exports = {
         georgia: ["Georgia", "serif"],
       },
       fontSize: {
-        'hero-title': ['4rem', '1.2'], // 64px
-        'hero-subtitle': ['1.5rem', '1.8'], // 24px
-        'section-title': ['2.5rem', '1.4'], // 40px
-        'body': ['1.25rem', '1.8'], // 20px
+        'hero-title': ['5rem', '1.2'], // 80px
+        'hero-subtitle': ['2rem', '1.8'], // 32px
+        'section-title': ['3rem', '1.4'], // 48px
+        'body': ['1.5rem', '1.8'], // 24px
+        sm: ['1rem', '1.5'], // 16px
+        base: ['1.25rem', '1.75'], // 20px
+        lg: ['1.5rem', '2'], // 24px
+        xl: ['2rem', '2.5'], // 32px
+        '2xl': ['2.5rem', '3'], // 40px
+        '3xl': ['3rem', '3.5'], // 48px
+        '4xl': ['4rem', '4.5'], // 64px
+        '5xl': ['5rem', '5.5'], // 80px
       },
       colors: {
         acasage: {
@@ -28,6 +37,20 @@ module.exports = {
           800: '#9a3412',
           900: '#7c2d12',
         },
+      },
+      backgroundColor: {
+        dark: {
+          'primary': '#1a1a1a',
+          'secondary': '#2d2d2d',
+          'accent': '#f97316',
+        }
+      },
+      textColor: {
+        dark: {
+          'primary': '#ffffff',
+          'secondary': '#9ca3af',
+          'accent': '#f97316',
+        }
       },
       animation: {
         float: 'float 6s ease-in-out infinite',
@@ -51,6 +74,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'), // Add Tailwind forms plugin
+    require('@tailwindcss/forms'),
   ],
 };
