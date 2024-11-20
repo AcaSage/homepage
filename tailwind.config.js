@@ -10,19 +10,24 @@ module.exports = {
       fontFamily: {
         georgia: ["Georgia", "serif"],
       },
+      spacing: {
+        'sm-gap': '1rem', // Mobile: 16px
+        'md-gap': '1.5rem', // Tablet: 24px
+        'lg-gap': '2rem', // Desktop: 32px
+      },
       fontSize: {
-        'hero-title': ['5rem', '1.2'], // 80px
-        'hero-subtitle': ['2rem', '1.8'], // 32px
-        'section-title': ['3rem', '1.4'], // 48px
-        'body': ['1.5rem', '1.8'], // 24px
-        sm: ['1rem', '1.5'], // 16px
-        base: ['1.25rem', '1.75'], // 20px
-        lg: ['1.5rem', '2'], // 24px
-        xl: ['2rem', '2.5'], // 32px
-        '2xl': ['2.5rem', '3'], // 40px
-        '3xl': ['3rem', '3.5'], // 48px
-        '4xl': ['4rem', '4.5'], // 64px
-        '5xl': ['5rem', '5.5'], // 80px
+        'hero-title': ['3rem', '1.2'], // 48px (desktop)
+        'hero-subtitle': ['1.25rem', '1.5'], // 20px
+        'section-title': ['2rem', '1.4'], // 32px
+        'body': ['1rem', '1.5'], // 16px
+        sm: ['0.875rem', '1.5'], // 14px
+        base: ['1rem', '1.6'], // 16px
+        lg: ['1.125rem', '1.7'], // 18px
+        xl: ['1.25rem', '1.8'], // 20px
+        '2xl': ['1.5rem', '1.9'], // 24px
+        '3xl': ['2rem', '2'], // 32px
+        '4xl': ['2.5rem', '2.5'], // 40px
+        '5xl': ['3rem', '3'], // 48px
       },
       colors: {
         acasage: {

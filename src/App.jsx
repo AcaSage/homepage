@@ -286,32 +286,32 @@ const translations = {
 
 const features = [
     {
-        icon: <Heart className="w-20 h-20" />,
+        icon: <Heart className="w-12 h-12" />,
         title: "Instant academic feedback",
         description: "Receive actionable, personalised insights to improve learning in real time"
     },
     {
-        icon: <Brain className="w-20 h-20" />,
+        icon: <Brain className="w-12 h-12" />,
         title: "Emotional well-being support",
         description: "Track your mood and access tailored mental health resources for resilience"
     },
     {
-        icon: <Users className="w-20 h-20" />,
+        icon: <Users className="w-12 h-12"  />,
         title: "Collaborative communities",
         description: "Engage in peer mentorship, study groups, and build meaningful connections"
     },
     {
-        icon: <ShieldCheck className="w-20 h-20" />,
+        icon: <ShieldCheck className="w-12 h-12" />,
         title: "Privacy and security",
         description: "Your data is encrypted and protected to ensure complete confidentiality"
     },
     {
-        icon: <Highlighter className="w-20 h-20" />,
+        icon: <Highlighter className="w-12 h-12" />,
         title: "Watermarked documents",
         description: "Protect your content with custom watermarks to prevent unauthorised sharing"
     },
     {
-        icon: <Rocket className="w-20 h-20" />,
+        icon: <Rocket className="w-12 h-12" />,
         title: "Cutting-edge AI integration",
         description: "Leverage advanced AI to enhance learning outcomes and streamline academic workflows"
     }
@@ -500,17 +500,17 @@ const AcaSagePage = () => {
                                                 stroke={darkMode ? '#9ca3af' : '#4b5563'}
                                                 tick={{
                                                     fill: darkMode ? '#9ca3af' : '#4b5563',
-                                                    fontSize: '16px', // Adjust tick font size
+                                                    fontSize: '16px',
                                                 }}
-                                                style={{fontSize: '16px'}} // Optional for consistency
+                                                style={{fontSize: '16px'}}
                                             />
                                             <YAxis
                                                 stroke={darkMode ? '#9ca3af' : '#4b5563'}
                                                 tick={{
                                                     fill: darkMode ? '#9ca3af' : '#4b5563',
-                                                    fontSize: '16px', // Adjust tick font size
+                                                    fontSize: '16px',
                                                 }}
-                                                style={{fontSize: '16px'}} // Optional for consistency
+                                                style={{fontSize: '16px'}}
                                             />
                                             <Line
                                                 type="monotone"
@@ -546,7 +546,7 @@ const AcaSagePage = () => {
                                     className="bg-white dark:bg-gray-900 rounded-2xl p-9 hover:shadow-lg transition-all"
                                 >
                                     <div
-                                        className="w-40 h-40 bg-orange-500 rounded-full flex items-center justify-center text-white text-3xl mb-6">
+                                        className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white text-3xl mb-6">
                                         {features[index]?.icon}
                                     </div>
                                     <h3 className="text-2xl font-semibold mb-4 dark:text-white">{feature.title}</h3>
@@ -639,7 +639,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.linkedin}
                                     >
-                                        <Linkedin className="w-16 h-16"/>
+                                        <Linkedin className="w-14 h-14"/>
                                     </a>
                                     <a
                                         href="https://github.com/anyapages"
@@ -648,7 +648,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.github}
                                     >
-                                        <Github className="w-16 h-16"/>
+                                        <Github className="w-14 h-14"/>
                                     </a>
                                     <a
                                         href="https://www.youtube.com/@anyaworks"
@@ -657,7 +657,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.youtube}
                                     >
-                                        <Youtube className="w-16 h-16"/>
+                                        <Youtube className="w-14 h-14"/>
                                     </a>
                                 </div>
                             </div>

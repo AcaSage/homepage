@@ -18,11 +18,11 @@ const translations = {
         ],
         moods: {
             positive: [
-                { name: 'Excellent', emoji: '😊', xp: 10 },
-                { name: 'Good', emoji: '🙂', xp: 8 },
-                { name: 'Calm', emoji: '😌', xp: 8 },
-                { name: 'Motivated', emoji: '💪', xp: 9 },
-                { name: 'Inspired', emoji: '💡', xp: 9 },
+                { name: 'Excellent', emoji: '😊', xp: 5 },
+                { name: 'Good', emoji: '🙂', xp: 5 },
+                { name: 'Calm', emoji: '😌', xp: 5 },
+                { name: 'Motivated', emoji: '💪', xp: 5 },
+                { name: 'Inspired', emoji: '💡', xp: 5 },
             ],
             negative: [
                 { name: 'Confused', emoji: '😕', xp: 5 },
@@ -48,11 +48,11 @@ const translations = {
         ],
         moods: {
             positive: [
-                { name: 'Excelente', emoji: '😊', xp: 10 },
-                { name: 'Bien', emoji: '🙂', xp: 8 },
-                { name: 'Tranquilo', emoji: '😌', xp: 8 },
-                { name: 'Motivado', emoji: '💪', xp: 9 },
-                { name: 'Inspirado', emoji: '💡', xp: 9 },
+                { name: 'Excelente', emoji: '😊', xp: 5 },
+                { name: 'Bien', emoji: '🙂', xp: 5 },
+                { name: 'Tranquilo', emoji: '😌', xp: 5 },
+                { name: 'Motivado', emoji: '💪', xp: 5 },
+                { name: 'Inspirado', emoji: '💡', xp: 5 },
             ],
             negative: [
                 { name: 'Confundido', emoji: '😕', xp: 5 },
@@ -78,11 +78,11 @@ const translations = {
         ],
         moods: {
             positive: [
-                { name: 'Excellent', emoji: '😊', xp: 10 },
-                { name: 'Bien', emoji: '🙂', xp: 8 },
-                { name: 'Calme', emoji: '😌', xp: 8 },
-                { name: 'Motivé', emoji: '💪', xp: 9 },
-                { name: 'Inspiré', emoji: '💡', xp: 9 },
+                { name: 'Excellent', emoji: '😊', xp: 5 },
+                { name: 'Bien', emoji: '🙂', xp: 5 },
+                { name: 'Calme', emoji: '😌', xp: 5 },
+                { name: 'Motivé', emoji: '💪', xp: 5 },
+                { name: 'Inspiré', emoji: '💡', xp: 5 },
             ],
             negative: [
                 { name: 'Confus', emoji: '😕', xp: 5 },
@@ -108,11 +108,11 @@ const translations = {
         ],
         moods: {
             positive: [
-                { name: 'ยอดเยี่ยม', emoji: '😊', xp: 10 },
-                { name: 'ดี', emoji: '🙂', xp: 8 },
-                { name: 'สงบ', emoji: '😌', xp: 8 },
-                { name: 'มีแรงจูงใจ', emoji: '💪', xp: 9 },
-                { name: 'มีแรงบันดาลใจ', emoji: '💡', xp: 9 },
+                { name: 'ยอดเยี่ยม', emoji: '😊', xp: 5 },
+                { name: 'ดี', emoji: '🙂', xp: 5 },
+                { name: 'สงบ', emoji: '😌', xp: 5 },
+                { name: 'มีแรงจูงใจ', emoji: '💪', xp: 5 },
+                { name: 'มีแรงบันดาลใจ', emoji: '💡', xp: 5 },
             ],
             negative: [
                 { name: 'สับสน', emoji: '😕', xp: 5 },
@@ -138,11 +138,11 @@ const translations = {
         ],
         moods: {
             positive: [
-                { name: 'Ausgezeichnet', emoji: '😊', xp: 10 },
-                { name: 'Gut', emoji: '🙂', xp: 8 },
-                { name: 'Ruhig', emoji: '😌', xp: 8 },
-                { name: 'Motiviert', emoji: '💪', xp: 9 },
-                { name: 'Inspiriert', emoji: '💡', xp: 9 },
+                { name: 'Ausgezeichnet', emoji: '😊', xp: 5 },
+                { name: 'Gut', emoji: '🙂', xp: 5 },
+                { name: 'Ruhig', emoji: '😌', xp: 5 },
+                { name: 'Motiviert', emoji: '💪', xp: 5 },
+                { name: 'Inspiriert', emoji: '💡', xp: 5 },
             ],
             negative: [
                 { name: 'Verwirrt', emoji: '😕', xp: 5 },
@@ -408,20 +408,20 @@ const PodcastInterface = ({ language = "English" }) => {
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            initial={{opacity: 0, y: 50}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.8}}
+            viewport={{once: true}}
             className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-6 shadow-lg"
         >
             {/* Data Privacy Notice */}
             <div className="space-y-4">
-                <h3 className="text-xl font-semibold">{t.dataPrivacyTitle}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t.dataPrivacyTitle}</h3>
                 <div className="space-y-2">
                     {t.dataPrivacyDetails.map((detail, index) => (
                         <div key={index} className="flex items-center gap-2">
-                            <Check className="text-green-600" />
-                            <span>{detail}</span>
+                            <Check className="text-green-600 dark:text-green-400"/>
+                            <span className="text-gray-800 dark:text-gray-300">{detail}</span>
                         </div>
                     ))}
                 </div>
@@ -430,9 +430,9 @@ const PodcastInterface = ({ language = "English" }) => {
             {/* Compose Note Section */}
             <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-semibold">{t.writeNoteTitle}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t.writeNoteTitle}</h3>
                     <select
-                        className="p-2 rounded-lg border border-gray-200 dark:border-gray-700"
+                        className="p-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-300"
                         value={selectedLanguage}
                         onChange={(e) => setSelectedLanguage(e.target.value)}
                     >
@@ -452,18 +452,19 @@ const PodcastInterface = ({ language = "English" }) => {
 
             {/* File Upload Section */}
             <div className="border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-lg p-8 text-center">
-                <Upload className="w-8 h-8 mx-auto mb-4 text-gray-400" />
+                <Upload className="w-8 h-8 mx-auto mb-4 text-gray-400 dark:text-gray-500"/>
                 <p className="text-gray-600 dark:text-gray-300">{t.fileUploadText}</p>
                 <p className="text-sm text-gray-400 dark:text-gray-500">{t.supportedFormats}</p>
             </div>
 
             {/* Voice Settings Section */}
             <div className="space-y-4">
-                <h3 className="text-xl font-semibold">{t.voiceSettingsTitle}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t.voiceSettingsTitle}</h3>
                 <div className="space-y-6">
                     {/* Playback Speed */}
                     <div className="space-y-2">
-                        <label className="block text-sm font-medium">{t.speedLabel}</label>
+                        <label
+                            className="block text-sm font-medium text-gray-900 dark:text-white">{t.speedLabel}</label>
                         <input
                             type="range"
                             className="w-full"
@@ -472,7 +473,7 @@ const PodcastInterface = ({ language = "English" }) => {
                             defaultValue="50"
                             aria-label={t.speedLabel}
                         />
-                        <div className="flex justify-between text-sm text-gray-500">
+                        <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                             {t.speedRange.map((label, index) => (
                                 <span key={index}>{label}</span>
                             ))}
@@ -480,7 +481,8 @@ const PodcastInterface = ({ language = "English" }) => {
                     </div>
                     {/* Voice Pitch */}
                     <div className="space-y-2">
-                        <label className="block text-sm font-medium">{t.pitchLabel}</label>
+                        <label
+                            className="block text-sm font-medium text-gray-900 dark:text-white">{t.pitchLabel}</label>
                         <input
                             type="range"
                             className="w-full"
@@ -489,7 +491,7 @@ const PodcastInterface = ({ language = "English" }) => {
                             defaultValue="30"
                             aria-label={t.pitchLabel}
                         />
-                        <div className="flex justify-between text-sm text-gray-500">
+                        <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                             {t.pitchRange.map((label, index) => (
                                 <span key={index}>{label}</span>
                             ))}
@@ -502,16 +504,17 @@ const PodcastInterface = ({ language = "English" }) => {
             <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
-                        <Play className="w-6 h-6" />
-                        <span>2:34</span>
+                        <Play className="w-6 h-6 text-gray-900 dark:text-white"/>
+                        <span className="text-gray-900 dark:text-white">2:34</span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Rewind className="w-6 h-6" />
-                        <Save className="w-6 h-6" />
+                        <Rewind className="w-6 h-6 text-gray-900 dark:text-white"/>
+                        <Save className="w-6 h-6 text-gray-900 dark:text-white"/>
                     </div>
-                    <span>-1:37</span>
+                    <span className="text-gray-900 dark:text-white">-1:37</span>
                 </div>
-                <button className="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition-colors">
+                <button
+                    className="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition-colors">
                     {t.generateButton}
                 </button>
             </div>
@@ -519,7 +522,7 @@ const PodcastInterface = ({ language = "English" }) => {
     );
 };
 
-const MoodTracker = ({ language = "English" }) => {
+const MoodTracker = ({language = "English"}) => {
     const [selectedMood, setSelectedMood] = useState(null);
     const [showXP, setShowXP] = useState(false);
 
@@ -548,24 +551,24 @@ const MoodTracker = ({ language = "English" }) => {
                                     <motion.button
                                         key={mood.name}
                                         onClick={() => handleMoodSelect(mood)}
-                                        className={`relative flex flex-col items-center gap-3 p-4 rounded-xl transition-all ${
+                                        className={`relative flex flex-col items-center gap-3 p-4 rounded-xl transition-all w-full md:w-48 ${
                                             selectedMood?.name === mood.name
                                                 ? 'bg-green-100 text-green-600'
                                                 : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
                                         }`}
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
+                                        whileHover={{scale: 1.05}}
+                                        whileTap={{scale: 0.95}}
                                     >
                                         <span className="text-4xl">{mood.emoji}</span>
                                         <span className="text-lg font-medium">{mood.name}</span>
                                         {selectedMood?.name === mood.name && showXP && (
                                             <motion.div
-                                                initial={{ opacity: 0, y: 20 }}
-                                                animate={{ opacity: 1, y: -20 }}
-                                                exit={{ opacity: 0 }}
+                                                initial={{opacity: 0, y: 20}}
+                                                animate={{opacity: 1, y: -20}}
+                                                exit={{opacity: 0}}
                                                 className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
                                             >
-                                                <Trophy className="w-7 h-7" />
+                                                <Trophy className="w-7 h-7"/>
                                                 <span className="text-lg font-medium">+{mood.xp}</span>
                                             </motion.div>
                                         )}
@@ -577,33 +580,44 @@ const MoodTracker = ({ language = "English" }) => {
                 </div>
 
                 {/* Podcast and Achievements */}
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* Podcast Interface */}
                     <PodcastInterface language={language} />
+
+                    {/* Achievements Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg"
+                        className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg transition-all duration-300"
                     >
-                        <h3 className="text-xl font-semibold mb-4">{t.achievementTitle}</h3>
+                        <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                            {t.achievementTitle}
+                        </h3>
                         {t.achievements.map((achievement, index) => (
                             <div
                                 key={index}
-                                className={`flex items-center justify-between p-3 rounded-lg ${
+                                className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
                                     achievement.completed
                                         ? 'bg-green-50 dark:bg-green-900'
                                         : 'bg-gray-50 dark:bg-gray-700'
                                 }`}
                             >
+                                {/* Achievement Details */}
                                 <div className="flex items-center gap-3">
-                                    <span className="text-lg">{achievement.level}</span>
-                                    <span className="text-sm text-gray-500 dark:text-gray-400">Level {achievement.levelNum}</span>
+                    <span className="text-lg text-gray-800 dark:text-gray-200">
+                        {achievement.level}
+                    </span>
+                                    <span className="text-sm text-gray-500 dark:text-gray-400">
+                        Level {achievement.levelNum}
+                    </span>
                                 </div>
+                                {/* Icon for Completed/Locked */}
                                 {achievement.completed ? (
                                     <Check className="w-5 h-5 text-green-500" />
                                 ) : (
-                                    <Lock className="w-5 h-5 text-gray-400" />
+                                    <Lock className="w-5 h-5 text-gray-400 dark:text-gray-500" />
                                 )}
                             </div>
                         ))}
