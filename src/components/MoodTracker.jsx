@@ -420,7 +420,7 @@ const PodcastInterface = ({ language = "English" }) => {
                 <div className="space-y-2">
                     {t.dataPrivacyDetails.map((detail, index) => (
                         <div key={index} className="flex items-center gap-2">
-                            <Check className="text-green-500" />
+                            <Check className="text-green-600" />
                             <span>{detail}</span>
                         </div>
                     ))}

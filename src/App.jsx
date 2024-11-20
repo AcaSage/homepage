@@ -428,8 +428,8 @@ const AcaSagePage = () => {
 
                 {/* Hero Section */}
                 <motion.section
-                    initial={{opacity: 0}}
-                    animate={{opacity: isVisible ? 1 : 0}}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isVisible ? 1 : 0 }}
                     className="relative h-screen flex items-center justify-center overflow-hidden"
                 >
                     <div className="absolute inset-0 z-0">
@@ -438,35 +438,38 @@ const AcaSagePage = () => {
                             alt="Students collaborating"
                             className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-black/40"/>
+                        <div className="absolute inset-0 bg-black/40" />
                     </div>
 
                     <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
                         <motion.h1
-                            initial={{y: 30, opacity: 0}}
-                            animate={{y: 0, opacity: 1}}
-                            transition={{delay: 0.2}}
-                            className="text-9xl font-bold mb-6"
+                            initial={{ y: 30, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.2 }}
+                            className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6"
                         >
                             {t.title}
                         </motion.h1>
                         <motion.p
-                            initial={{y: 30, opacity: 0}}
-                            animate={{y: 0, opacity: 1}}
-                            transition={{delay: 0.4}}
-                            className="text-xl mb-8"
+                            initial={{ y: 30, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.4 }}
+                            className="text-xl md:text-3xl lg:text-xl mb-9"
                         >
                             {t.subtitle}
                         </motion.p>
                         <motion.div
-                            initial={{y: 30, opacity: 0}}
-                            animate={{y: 0, opacity: 1}}
-                            transition={{delay: 0.6}}
+                            initial={{ y: 30, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ delay: 0.6 }}
+                            className="text-center"
                         >
-                            <button
-                                className="text-xl bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-all flex items-center gap-2 mx-auto">
-                                {t.joinWaitlist} <ArrowRight className="w-10 h-10"/>
-                            </button>
+                            <a
+                                href="mailto:hi.acasage@gmail.com"
+                                className="text-xl md:text-2xl bg-orange-500 hover:bg-orange-600 text-white px-8 py-2 rounded-full font-medium transition-all flex items-center justify-center gap-2 w-fit mx-auto"
+                            >
+                                {t.joinWaitlist} <ArrowRight className="w-10 h-10" />
+                            </a>
                         </motion.div>
                     </div>
                 </motion.section>
