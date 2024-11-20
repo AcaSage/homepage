@@ -75,6 +75,25 @@ const translations = {
                 ],
             },
         ],
+        footer: {
+            aboutTitle: "About",
+            aboutText:
+                "Redefining learning by delivering innovative academic tools and personalised wellness support. AcaSage is designed to address the evolving needs of students, aligning with SES 2023 insights on support, engagement, and mental health.",
+            contactTitle: "Contact",
+            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            followTitle: "Follow",
+            followLinks: {
+                linkedin: "Follow us on LinkedIn",
+                github: "Follow us on GitHub",
+            },
+            memberText: "Member of",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "powered by State Library Victoria",
+            copyright: "All rights reserved",
+        },
     },
     Español: {
         title: "Aprende con Inteligencia, Crece con Fuerza",
@@ -100,6 +119,63 @@ const translations = {
             { title: "Privacidad y seguridad", description: "Tus datos están encriptados y protegidos para garantizar una confidencialidad completa" },
             { title: "Documentos con marcas de agua", description: "Protege tu contenido con marcas de agua personalizadas para evitar el uso no autorizado" },
             { title: "Integración avanzada de IA", description: "Aprovecha la IA avanzada para mejorar los resultados de aprendizaje y optimizar los flujos de trabajo académicos" },
+        ],
+        footer: {
+            aboutTitle: "Acerca de",
+            aboutText:
+                "Redefiniendo el aprendizaje al ofrecer herramientas académicas innovadoras y apoyo personalizado para el bienestar. AcaSage está diseñado para abordar las necesidades en evolución de los estudiantes, alineándose con los conocimientos de SES 2023 sobre apoyo, compromiso y salud mental.",
+            contactTitle: "Contacto",
+            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            followTitle: "Síguenos",
+            followLinks: {
+                linkedin: "Síguenos en LinkedIn",
+                github: "Síguenos en GitHub",
+            },
+            memberText: "Miembro de",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "impulsado por la Biblioteca Estatal de Victoria",
+            copyright: "Todos los derechos reservados",
+        },
+        statDetails: [
+            {
+                value: "57.9%",
+                label: "Satisfacción de los estudiantes con la participación entre pares en entornos académicos",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "Satisfacción de los estudiantes con los servicios de apoyo proporcionados por la universidad",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "Porcentaje de estudiantes que sienten un fuerte sentido de pertenencia",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "Estudiantes que enfrentan importantes desafíos de salud mental",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     Français: {
@@ -127,9 +203,62 @@ const translations = {
             { title: "Documents filigranés", description: "Protégez votre contenu avec des filigranes personnalisés pour éviter les partages non autorisés" },
             { title: "Intégration IA avancée", description: "Utilisez une IA avancée pour améliorer les résultats d'apprentissage et rationaliser les flux de travail académiques" },
         ],
+        footer: {
+            aboutTitle: "À propos",
+            aboutText:
+                "Redéfinir l'apprentissage en offrant des outils académiques innovants et un soutien personnalisé au bien-être. AcaSage est conçu pour répondre aux besoins en constante évolution des étudiants, en s'alignant sur les perspectives de SES 2023 concernant le soutien, l'engagement et la santé mentale.",
+            contactTitle: "Contact",
+            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australie"],
+            followTitle: "Suivez-nous",
+            followLinks: {
+                linkedin: "Suivez-nous sur LinkedIn",
+                github: "Suivez-nous sur GitHub",
+            },
+            memberText: "Membre de",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "propulsé par la Bibliothèque d'État de Victoria",
+            copyright: "Tous droits réservés",
+        },
         statDetails: [
-            { value: "46.3%", label: "Sentiment d'appartenance", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "Défis en santé mentale", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "Satisfaction des étudiants concernant l'engagement entre pairs dans les environnements académiques",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "Satisfaction des étudiants envers les services de soutien fournis par l'université",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "Pourcentage d'étudiants ressentant un fort sentiment d'appartenance au sein de leur communauté éducative",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "Pourcentage d'étudiants rencontrant des défis significatifs en matière de santé mentale",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     ภาษาไทย: {
@@ -157,9 +286,62 @@ const translations = {
             { title: "เอกสารที่มีลายน้ำ", description: "ปกป้องเนื้อหาของคุณด้วยลายน้ำที่กำหนดเองเพื่อป้องกันการแชร์โดยไม่ได้รับอนุญาต" },
             { title: "การรวม AI ล้ำสมัย", description: "ใช้ประโยชน์จาก AI ขั้นสูงเพื่อปรับปรุงผลลัพธ์การเรียนรู้และทำให้งานด้านวิชาการเป็นระเบียบ" },
         ],
+        footer: {
+            aboutTitle: "เกี่ยวกับเรา",
+            aboutText:
+                "เรากำหนดรูปแบบการเรียนรู้ใหม่โดยมอบเครื่องมือการเรียนรู้ที่ล้ำสมัยและการสนับสนุนสุขภาพจิตที่ปรับให้เหมาะสม AcaSage ได้รับการออกแบบมาเพื่อตอบสนองความต้องการของนักเรียนที่พัฒนาไปเรื่อย ๆ โดยสอดคล้องกับข้อมูลเชิงลึกของ SES 2023 เกี่ยวกับการสนับสนุน การมีส่วนร่วม และสุขภาพจิต",
+            contactTitle: "ติดต่อ",
+            contactDetails: ["hi.acasage@gmail.com", "เมลเบิร์น ออสเตรเลีย"],
+            followTitle: "ติดตามเรา",
+            followLinks: {
+                linkedin: "ติดตามเราบน LinkedIn",
+                github: "ติดตามเราบน GitHub",
+            },
+            memberText: "สมาชิกของ",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "ขับเคลื่อนโดยหอสมุดแห่งรัฐวิคตอเรีย",
+            copyright: "สงวนลิขสิทธิ์",
+        },
         statDetails: [
-            { value: "46.3%", label: "ความรู้สึกเป็นส่วนหนึ่ง", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "ความท้าทายด้านสุขภาพจิต", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "ความพึงพอใจของนักเรียนต่อการมีส่วนร่วมกับเพื่อนในสภาพแวดล้อมการเรียนรู้",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "ความพึงพอใจของนักเรียนต่อบริการสนับสนุนที่มหาวิทยาลัยมอบให้",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "เปอร์เซ็นต์ของนักเรียนที่รู้สึกถึงความเป็นส่วนหนึ่งในชุมชนการเรียนรู้",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "เปอร์เซ็นต์ของนักเรียนที่ประสบปัญหาด้านสุขภาพจิตที่สำคัญ",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     Deutsch: {
@@ -187,9 +369,62 @@ const translations = {
             { title: "Wasserzeichen-Dokumente", description: "Schützen Sie Ihre Inhalte mit benutzerdefinierten Wasserzeichen, um unbefugtes Teilen zu verhindern" },
             { title: "Modernste KI-Integration", description: "Nutzen Sie fortschrittliche KI, um Lernergebnisse zu verbessern und akademische Arbeitsabläufe zu optimieren" },
         ],
+        footer: {
+            aboutTitle: "Über uns",
+            aboutText:
+                "Neudefinition des Lernens durch innovative akademische Werkzeuge und personalisierte Unterstützung für das Wohlbefinden. AcaSage wurde entwickelt, um den sich entwickelnden Bedürfnissen der Studierenden gerecht zu werden, basierend auf den Erkenntnissen von SES 2023 zu Unterstützung, Engagement und psychischer Gesundheit.",
+            contactTitle: "Kontakt",
+            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australien"],
+            followTitle: "Folgen",
+            followLinks: {
+                linkedin: "Folgen Sie uns auf LinkedIn",
+                github: "Folgen Sie uns auf GitHub",
+            },
+            memberText: "Mitglied von",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "betrieben von der Staatsbibliothek von Victoria",
+            copyright: "Alle Rechte vorbehalten",
+        },
         statDetails: [
-            { value: "46.3%", label: "Gefühl der Zugehörigkeit", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "Psychische Herausforderungen", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "Zufriedenheit der Studierenden mit der Zusammenarbeit mit Gleichaltrigen",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "Zufriedenheit der Studierenden mit von der Universität bereitgestellten Unterstützungsdiensten",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "Prozentsatz der Studierenden mit einem starken Zugehörigkeitsgefühl",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "Studierende mit erheblichen psychischen Herausforderungen",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     Italiano: {
@@ -217,9 +452,62 @@ const translations = {
             { title: "Documenti con filigrana", description: "Proteggi i tuoi contenuti con filigrane personalizzate per evitare condivisioni non autorizzate" },
             { title: "Integrazione avanzata di IA", description: "Sfrutta un'IA avanzata per migliorare i risultati di apprendimento e ottimizzare i flussi di lavoro accademici" },
         ],
+        footer: {
+            aboutTitle: "Chi siamo",
+            aboutText:
+                "Ridefinire l'apprendimento fornendo strumenti accademici innovativi e supporto personalizzato al benessere. AcaSage è progettato per rispondere alle esigenze in evoluzione degli studenti, in linea con le intuizioni di SES 2023 su supporto, coinvolgimento e salute mentale.",
+            contactTitle: "Contatto",
+            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            followTitle: "Seguici",
+            followLinks: {
+                linkedin: "Seguici su LinkedIn",
+                github: "Seguici su GitHub",
+            },
+            memberText: "Membro di",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "supportato dalla Biblioteca Statale del Victoria",
+            copyright: "Tutti i diritti riservati",
+        },
         statDetails: [
-            { value: "46.3%", label: "Senso di appartenenza", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "Sfide di salute mentale", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "Soddisfazione degli studenti per il coinvolgimento tra pari nei contesti accademici",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "Soddisfazione degli studenti per i servizi di supporto forniti dall'università",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "Percentuale di studenti con un forte senso di appartenenza",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "Studenti che affrontano sfide significative per la salute mentale",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     العربية: {
@@ -247,9 +535,62 @@ const translations = {
             { title: "المستندات ذات العلامات المائية", description: "احمِ المحتوى الخاص بك باستخدام علامات مائية مخصصة لمنع المشاركة غير المصرح بها" },
             { title: "تكامل الذكاء الاصطناعي المتطور", description: "استفد من الذكاء الاصطناعي المتقدم لتحسين النتائج التعليمية وتبسيط سير العمل الأكاديمي" },
         ],
+        footer: {
+            aboutTitle: "حول",
+            aboutText:
+                "إعادة تعريف التعلم من خلال تقديم أدوات أكاديمية مبتكرة ودعم شخصي للصحة النفسية. تم تصميم AcaSage لتلبية الاحتياجات المتطورة للطلاب، بما يتماشى مع رؤى SES 2023 حول الدعم والمشاركة والصحة النفسية.",
+            contactTitle: "اتصل بنا",
+            contactDetails: ["hi.acasage@gmail.com", "ملبورن، أستراليا"],
+            followTitle: "تابعنا",
+            followLinks: {
+                linkedin: "تابعنا على LinkedIn",
+                github: "تابعنا على GitHub",
+            },
+            memberText: "عضو في",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "بدعم من مكتبة ولاية فيكتوريا",
+            copyright: "جميع الحقوق محفوظة",
+        },
         statDetails: [
-            { value: "46.3%", label: "الشعور بالانتماء", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "التحديات الصحية العقلية", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "رضا الطلاب عن التفاعل مع الأقران في البيئات الأكاديمية",
+                source: "(QILT، 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "رضا الطلاب عن خدمات الدعم التي تقدمها الجامعة",
+                source: "(QILT، 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "نسبة الطلاب الذين يشعرون بانتماء قوي",
+                source: "(SES، 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "الطلاب الذين يواجهون تحديات نفسية كبيرة",
+                source: "(NMHC، 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
     中文: {
@@ -277,9 +618,62 @@ const translations = {
             { title: "带水印的文件", description: "使用自定义水印保护您的内容，防止未经授权的分享" },
             { title: "尖端 AI 集成", description: "利用先进的人工智能提高学习成果并简化学术工作流程" },
         ],
+        footer: {
+            aboutTitle: "关于我们",
+            aboutText:
+                "通过提供创新的学术工具和个性化的健康支持重新定义学习。AcaSage 的设计旨在满足学生不断变化的需求，并与 SES 2023 对支持、参与和心理健康的洞察保持一致。",
+            contactTitle: "联系方式",
+            contactDetails: ["hi.acasage@gmail.com", "澳大利亚墨尔本"],
+            followTitle: "关注我们",
+            followLinks: {
+                linkedin: "在 LinkedIn 上关注我们",
+                github: "在 GitHub 上关注我们",
+            },
+            memberText: "成员机构",
+            memberLink: {
+                text: "StartSpace",
+                url: "https://startspacehq.com",
+            },
+            poweredBy: "由维多利亚州立图书馆支持",
+            copyright: "版权所有",
+        },
         statDetails: [
-            { value: "46.3%", label: "归属感", source: "(SES, 2023)", trend: [{ year: 2020, value: 52 }, { year: 2023, value: 46.3 }] },
-            { value: "38.8%", label: "心理健康挑战", source: "(NMHC, 2024)", trend: [{ year: 2020, value: 30 }, { year: 2023, value: 38.8 }] },
+            {
+                value: "57.9%",
+                label: "学生对学术环境中同伴互动的满意度",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 64 },
+                    { year: 2023, value: 57.9 },
+                ],
+            },
+            {
+                value: "66.7%",
+                label: "学生对大学提供的支持服务的满意度",
+                source: "(QILT, 2024)",
+                trend: [
+                    { year: 2020, value: 72 },
+                    { year: 2023, value: 66.7 },
+                ],
+            },
+            {
+                value: "46.3%",
+                label: "学生感到强烈归属感的比例",
+                source: "(SES, 2023)",
+                trend: [
+                    { year: 2020, value: 52 },
+                    { year: 2023, value: 46.3 },
+                ],
+            },
+            {
+                value: "38.8%",
+                label: "面临重大心理健康挑战的学生比例",
+                source: "(NMHC, 2024)",
+                trend: [
+                    { year: 2020, value: 30 },
+                    { year: 2023, value: 38.8 },
+                ],
+            },
         ],
     },
 };
@@ -393,27 +787,27 @@ const AcaSagePage = () => {
                     )}
                 </button>
 
-                {/* Language Selector - update with dark mode styles */}
+                {/* Language Selector */}
                 <div className="fixed top-4 right-4 z-50">
                     <button
                         onClick={() => setShowLanguage(!showLanguage)}
-                        className="flex items-center gap-2 bg-white p-4 dark:bg-gray-800 px-4 py-2 rounded-full shadow-md dark:text-white"
+                        className="flex items-center gap-2 bg-white p-2 sm:p-4 dark:bg-gray-800 px-4 py-2 rounded-full shadow-md dark:text-white"
                     >
-                        <Globe size={22}/>
-                        {language}
-                        <ChevronDown size={22}/>
+                        <Globe size={20} />
+                        <span className="text-sm sm:text-base">{language}</span>
+                        <ChevronDown size={20} />
                     </button>
 
                     {showLanguage && (
                         <motion.div
-                            initial={{opacity: 0, y: -10}}
-                            animate={{opacity: 1, y: 0}}
-                            className="absolute top-12 right-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2"
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="absolute top-12 right-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2 w-40 sm:w-48" // Adjust width
                         >
                             {Object.keys(translations).map((lang) => (
                                 <button
                                     key={lang}
-                                    className="w-full px-4 py-2 text-left hover:bg-orange-50 dark:hover:bg-gray-700 dark:text-white"
+                                    className="w-full px-4 py-2 text-left hover:bg-orange-50 dark:hover:bg-gray-700 dark:text-white text-sm sm:text-base" // Smaller font
                                     onClick={() => {
                                         setLanguage(lang);
                                         setShowLanguage(false);
@@ -639,7 +1033,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.linkedin}
                                     >
-                                        <Linkedin className="w-14 h-14"/>
+                                        <Linkedin className="w-12 h-12"/>
                                     </a>
                                     <a
                                         href="https://github.com/anyapages"
@@ -648,7 +1042,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.github}
                                     >
-                                        <Github className="w-14 h-14"/>
+                                        <Github className="w-12 h-12"/>
                                     </a>
                                     <a
                                         href="https://www.youtube.com/@anyaworks"
@@ -657,7 +1051,7 @@ const AcaSagePage = () => {
                                         className="text-orange-500 hover:text-orange-600 transition-colors"
                                         aria-label={t.youtube}
                                     >
-                                        <Youtube className="w-14 h-14"/>
+                                        <Youtube className="w-12 h-12"/>
                                     </a>
                                 </div>
                             </div>
@@ -702,63 +1096,70 @@ const AcaSagePage = () => {
                     <div className="max-w-6xl mx-auto px-4">
                         {/* Center the sections */}
                         <div className="flex flex-col md:flex-row md:justify-center items-center gap-12 mb-12">
+                            {/* About Section */}
                             <div className="text-center md:text-left">
-                                <h3 className="text-lg font-semibold mb-4">About</h3>
+                                <h3 className="text-lg font-semibold mb-4">{translations[language].footer.aboutTitle}</h3>
                                 <p className="text-gray-400 text-lg">
-                                    Redefining learning by delivering innovative academic tools and personalised
-                                    wellness support.
-                                    AcaSage is designed to address the evolving needs of students, aligning with SES
-                                    2023 insights on support, engagement, and mental health
+                                    {translations[language].footer.aboutText}
                                 </p>
                             </div>
+
+                            {/* Contact Section */}
                             <div className="text-center md:text-left">
-                                <h3 className="text-xl font-semibold mb-4">Contact</h3>
+                                <h3 className="text-lg font-semibold mb-4">{translations[language].footer.contactTitle}</h3>
                                 <ul className="space-y-2 text-gray-400 text-lg">
-                                    <li>hi.acasage@gmail.com</li>
-                                    <li>Melbourne, Australia</li>
+                                    {translations[language].footer.contactDetails.map((contact, index) => (
+                                        <li key={index}>{contact}</li>
+                                    ))}
                                 </ul>
                             </div>
+
+                            {/* Follow Section */}
                             <div className="text-center md:text-left">
-                                <h3 className="text-xl font-semibold mb-4">Follow</h3>
+                                <h3 className="text-lg font-semibold mb-4">{translations[language].footer.followTitle}</h3>
                                 <div className="flex justify-center md:justify-start gap-4">
                                     <a
                                         href="https://linkedin.com/company/acasage"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-white transition-colors"
-                                        aria-label="Follow us on LinkedIn"
+                                        aria-label={translations[language].footer.followLinks.linkedin}
                                     >
-                                        <Linkedin className="w-12 h-12"/>
+                                        <Linkedin className="w-10 h-10" />
                                     </a>
                                     <a
                                         href="https://github.com/acasage"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-white transition-colors"
-                                        aria-label="Follow us on GitHub"
+                                        aria-label={translations[language].footer.followLinks.github}
                                     >
-                                        <Github className="w-12 h-12"/>
+                                        <Github className="w-10 h-10" />
                                     </a>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Footer Bottom */}
                         <div className="border-t border-gray-800 pt-8 mt-8">
                             <div className="text-center space-y-4">
                                 <div className="space-y-2">
+                                    {/* Member of Section */}
                                     <p className="text-lg text-gray-400">
-                                        Member of{' '}
+                                        {translations[language].footer.memberText}{' '}
                                         <a
-                                            href="https://startspacehq.com"
+                                            href={translations[language].footer.memberLink.url}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-orange-400 hover:text-orange-300 transition-colors"
                                         >
-                                            StartSpace
-                                        </a>
-                                        , powered by State Library Victoria
+                                            {translations[language].footer.memberLink.text}
+                                        </a>{' '}
+                                        {translations[language].footer.poweredBy}
                                     </p>
+                                    {/* Copyright */}
                                     <p className="text-xl text-gray-400">
-                                        &copy; {new Date().getFullYear()} AcaSage. All rights reserved.
+                                        &copy; {new Date().getFullYear()} AcaSage. {translations[language].footer.copyright}.
                                     </p>
                                 </div>
                             </div>

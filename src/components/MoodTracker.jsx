@@ -31,6 +31,7 @@ const translations = {
                 { name: 'Tired', emoji: '😴', xp: 5 },
                 { name: 'Overwhelmed', emoji: '😩', xp: 5 },
             ],
+
         },
     },
     Español: {
@@ -504,12 +505,12 @@ const PodcastInterface = ({ language = "English" }) => {
             <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
-                        <Play className="w-6 h-6 text-gray-900 dark:text-white"/>
-                        <span className="text-gray-900 dark:text-white">2:34</span>
+                        <button><Play className="w-6 h-6 text-gray-900 dark:text-white"/></button>
+                            <span className="text-gray-900 dark:text-white">2:34</span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Rewind className="w-6 h-6 text-gray-900 dark:text-white"/>
-                        <Save className="w-6 h-6 text-gray-900 dark:text-white"/>
+                        <button><Rewind className="w-6 h-6 text-gray-900 dark:text-white"/></button>
+                        <button><Save className="w-6 h-6 text-gray-900 dark:text-white"/></button>
                     </div>
                     <span className="text-gray-900 dark:text-white">-1:37</span>
                 </div>
@@ -546,7 +547,7 @@ const MoodTracker = ({language = "English"}) => {
                     <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg dark:shadow-gray-900/30">
                         <h3 className="text-2xl font-semibold mb-8 text-gray-900 dark:text-white text-center">{t.question}</h3>
                         {Object.entries(t.moods).map(([type, moods]) => (
-                            <div key={type} className="flex justify-around mb-8">
+                            <div key={type} className="mood-grid flex justify-around mb-8">
                                 {moods.map((mood) => (
                                     <motion.button
                                         key={mood.name}
@@ -569,7 +570,7 @@ const MoodTracker = ({language = "English"}) => {
                                                 className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
                                             >
                                                 <Trophy className="w-7 h-7"/>
-                                                <span className="text-lg font-medium">+{mood.xp}</span>
+                                                <span className="text-lg font-medium">+{mood.xp} XP</span>
                                             </motion.div>
                                         )}
                                     </motion.button>
@@ -582,50 +583,97 @@ const MoodTracker = ({language = "English"}) => {
                 {/* Podcast and Achievements */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Podcast Interface */}
-                    <PodcastInterface language={language} />
+                    <PodcastInterface language={language}/>
 
-                    {/* Achievements Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                        className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg transition-all duration-300"
-                    >
-                        <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-                            {t.achievementTitle}
-                        </h3>
-                        {t.achievements.map((achievement, index) => (
-                            <div
-                                key={index}
-                                className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
-                                    achievement.completed
-                                        ? 'bg-green-50 dark:bg-green-900'
-                                        : 'bg-gray-50 dark:bg-gray-700'
-                                }`}
-                            >
-                                {/* Achievement Details */}
-                                <div className="flex items-center gap-3">
-                    <span className="text-lg text-gray-800 dark:text-gray-200">
-                        {achievement.level}
-                    </span>
-                                    <span className="text-sm text-gray-500 dark:text-gray-400">
-                        Level {achievement.levelNum}
-                    </span>
+                    {/* Goal & Achievements Section */}
+                    <div className="space-y-8">
+                        {/* Challenges Section */}
+                        <motion.div
+                            initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{duration: 0.8}}
+                            viewport={{once: true}}
+                            className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg"
+                        >
+                            <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                                Today's challenges
+                            </h3>
+                            {[
+                                {task: "Complete 3 focused study sessions", xp: 50, completed: false},
+                                {task: "Write 500 meaningful words", xp: 30, completed: true},
+                                {task: "Review 2 peer-submitted papers ", xp: 40, completed: false},
+                                {task: "Participate in a group study session", xp: 20, completed: true},
+                                {task: "Take a mindful meditation break", xp: 25, completed: false}
+                            ].map((challenge, index) => (
+                                <div
+                                    key={index}
+                                    className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
+                                        challenge.completed
+                                            ? 'bg-green-50 dark:bg-green-900/30'
+                                            : 'bg-gray-50 dark:bg-gray-700'
+                                    }`}
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-gray-800 dark:text-gray-200">
+                                            {challenge.task}
+                                        </span>
+                                                        </div>
+                                                        <div className="flex items-center gap-3">
+                                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                                            +{challenge.xp} XP
+                                        </span>
+                                        {challenge.completed ? (
+                                            <Check className="w-5 h-5 text-green-500"/>
+                                        ) : (
+                                            <Clock className="w-5 h-5 text-gray-400 dark:text-gray-500"/>
+                                        )}
+                                    </div>
                                 </div>
-                                {/* Icon for Completed/Locked */}
-                                {achievement.completed ? (
-                                    <Check className="w-5 h-5 text-green-500" />
-                                ) : (
-                                    <Lock className="w-5 h-5 text-gray-400 dark:text-gray-500" />
-                                )}
-                            </div>
-                        ))}
-                    </motion.div>
-                </div>
+                            ))}
+                        </motion.div>
+
+                        {/* Achievements Section */}
+                        <motion.div
+                            initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{duration: 0.8}}
+                            viewport={{once: true}}
+                            className="bg-white dark:bg-gray-800 rounded-xl p-6 space-y-3 shadow-lg"
+                        >
+                            <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                                {t.achievementTitle}
+                            </h3>
+                            {t.achievements.map((achievement, index) => (
+                                <div
+                                    key={index}
+                                    className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
+                                        achievement.completed
+                                            ? 'bg-green-50 dark:bg-green-900/30'
+                                            : 'bg-gray-50 dark:bg-gray-700'
+                                    }`}
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-lg text-gray-800 dark:text-gray-200">
+                                            {achievement.level}
+                                        </span>
+                                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                                            Level {achievement.levelNum}
+                                        </span>
+                                    </div>
+                                    {achievement.completed ? (
+                                        <Check className="w-5 h-5 text-green-500"/>
+                                    ) : (
+                                        <Lock className="w-5 h-5 text-gray-400 dark:text-gray-500"/>
+                                    )}
+                                </div>
+                            ))}
+                        </motion.div>
+                    </div>
             </div>
-        </section>
-    );
+        </div>
+</section>
+)
+    ;
 };
 
 export default MoodTracker;
