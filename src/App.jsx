@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
-import BgImage from './assets/bg.jpeg';
+import BgImage from './assets/bg.png';
 import DashBoard from './assets/db.png';
 import FD from './assets/anya.jpeg';
 import PodCast from './assets/db2.png';
