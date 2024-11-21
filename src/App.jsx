@@ -20,8 +20,8 @@ const translations = {
         testimonials: "Imagine the possibilities",
         cta: "Shape the future today",
         ctaSubtitle: "Be among the first to try AcaSage and make a difference",
-        joinWaitlist: "Get early access",
-        learnMore: "Explore our development",
+        joinWaitlist: "Get on the waitlist",
+        learnMore: "Investors — let's talk!",
         founderTitle: "About the Founder",
         founderDescription:
             "When I struggled to find personalised academic support as a student, I decided to take action. Using my skills as a software developer and insights from my journey, I created AcaSage — a learning companion designed to adapt to each student’s individual path to success",
@@ -80,7 +80,7 @@ const translations = {
             aboutText:
                 "Redefining learning by delivering innovative academic tools and personalised wellness support. AcaSage is designed to address the evolving needs of students, aligning with SES 2023 insights on support, engagement, and mental health.",
             contactTitle: "Contact",
-            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
             followTitle: "Follow",
             followLinks: {
                 linkedin: "Follow us on LinkedIn",
@@ -125,7 +125,7 @@ const translations = {
             aboutText:
                 "Redefiniendo el aprendizaje al ofrecer herramientas académicas innovadoras y apoyo personalizado para el bienestar. AcaSage está diseñado para abordar las necesidades en evolución de los estudiantes, alineándose con los conocimientos de SES 2023 sobre apoyo, compromiso y salud mental.",
             contactTitle: "Contacto",
-            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
             followTitle: "Síguenos",
             followLinks: {
                 linkedin: "Síguenos en LinkedIn",
@@ -208,7 +208,7 @@ const translations = {
             aboutText:
                 "Redéfinir l'apprentissage en offrant des outils académiques innovants et un soutien personnalisé au bien-être. AcaSage est conçu pour répondre aux besoins en constante évolution des étudiants, en s'alignant sur les perspectives de SES 2023 concernant le soutien, l'engagement et la santé mentale.",
             contactTitle: "Contact",
-            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australie"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australie"],
             followTitle: "Suivez-nous",
             followLinks: {
                 linkedin: "Suivez-nous sur LinkedIn",
@@ -291,7 +291,7 @@ const translations = {
             aboutText:
                 "เรากำหนดรูปแบบการเรียนรู้ใหม่โดยมอบเครื่องมือการเรียนรู้ที่ล้ำสมัยและการสนับสนุนสุขภาพจิตที่ปรับให้เหมาะสม AcaSage ได้รับการออกแบบมาเพื่อตอบสนองความต้องการของนักเรียนที่พัฒนาไปเรื่อย ๆ โดยสอดคล้องกับข้อมูลเชิงลึกของ SES 2023 เกี่ยวกับการสนับสนุน การมีส่วนร่วม และสุขภาพจิต",
             contactTitle: "ติดต่อ",
-            contactDetails: ["hi.acasage@gmail.com", "เมลเบิร์น ออสเตรเลีย"],
+            contactDetails: ["founder@acasage.com", "เมลเบิร์น ออสเตรเลีย"],
             followTitle: "ติดตามเรา",
             followLinks: {
                 linkedin: "ติดตามเราบน LinkedIn",
@@ -374,7 +374,7 @@ const translations = {
             aboutText:
                 "Neudefinition des Lernens durch innovative akademische Werkzeuge und personalisierte Unterstützung für das Wohlbefinden. AcaSage wurde entwickelt, um den sich entwickelnden Bedürfnissen der Studierenden gerecht zu werden, basierend auf den Erkenntnissen von SES 2023 zu Unterstützung, Engagement und psychischer Gesundheit.",
             contactTitle: "Kontakt",
-            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australien"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australien"],
             followTitle: "Folgen",
             followLinks: {
                 linkedin: "Folgen Sie uns auf LinkedIn",
@@ -457,7 +457,7 @@ const translations = {
             aboutText:
                 "Ridefinire l'apprendimento fornendo strumenti accademici innovativi e supporto personalizzato al benessere. AcaSage è progettato per rispondere alle esigenze in evoluzione degli studenti, in linea con le intuizioni di SES 2023 su supporto, coinvolgimento e salute mentale.",
             contactTitle: "Contatto",
-            contactDetails: ["hi.acasage@gmail.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
             followTitle: "Seguici",
             followLinks: {
                 linkedin: "Seguici su LinkedIn",
@@ -540,7 +540,7 @@ const translations = {
             aboutText:
                 "إعادة تعريف التعلم من خلال تقديم أدوات أكاديمية مبتكرة ودعم شخصي للصحة النفسية. تم تصميم AcaSage لتلبية الاحتياجات المتطورة للطلاب، بما يتماشى مع رؤى SES 2023 حول الدعم والمشاركة والصحة النفسية.",
             contactTitle: "اتصل بنا",
-            contactDetails: ["hi.acasage@gmail.com", "ملبورن، أستراليا"],
+            contactDetails: ["founder@acasage.com", "ملبورن، أستراليا"],
             followTitle: "تابعنا",
             followLinks: {
                 linkedin: "تابعنا على LinkedIn",
@@ -623,7 +623,7 @@ const translations = {
             aboutText:
                 "通过提供创新的学术工具和个性化的健康支持重新定义学习。AcaSage 的设计旨在满足学生不断变化的需求，并与 SES 2023 对支持、参与和心理健康的洞察保持一致。",
             contactTitle: "联系方式",
-            contactDetails: ["hi.acasage@gmail.com", "澳大利亚墨尔本"],
+            contactDetails: ["founder@acasage.com", "澳大利亚墨尔本"],
             followTitle: "关注我们",
             followLinks: {
                 linkedin: "在 LinkedIn 上关注我们",
@@ -859,7 +859,7 @@ const AcaSagePage = () => {
                             className="text-center"
                         >
                             <a
-                                href="mailto:hi.acasage@gmail.com"
+                                href="mailto:founder@acasage.com"
                                 className="text-xl md:text-2xl bg-orange-500 hover:bg-orange-600 text-white px-8 py-2 rounded-full font-medium transition-all flex items-center justify-center gap-2 w-fit mx-auto"
                             >
                                 {t.joinWaitlist} <ArrowRight className="w-10 h-10" />
@@ -1079,14 +1079,15 @@ const AcaSagePage = () => {
                         <h2 className="text-4xl font-bold mb-6">{t.cta}</h2>
                         <p className="text-xl mb-8">{t.ctaSubtitle}</p>
                         <div className="text-lg flex flex-col sm:flex-row gap-4 justify-center">
-                            <button
-                                className="bg-white dark:bg-gray-900 text-orange-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all shadow-lg">
+                            <a
+                                href="mailto:founder@acasage.com" className="bg-white dark:bg-gray-900 text-orange-500 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-all shadow-lg">
                                 {t.joinWaitlist}
-                            </button>
-                            <button
-                                className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600/50 dark:hover:bg-orange-700/50 transition-all">
+
+                            </a>
+                            <a
+                                href="mailto:founder@acasage.com" className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-orange-600/50 dark:hover:bg-orange-700/50 transition-all">
                                 {t.learnMore}
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </section>

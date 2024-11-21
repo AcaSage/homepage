@@ -621,47 +621,39 @@ const MoodTracker = ({language = "English"}) => {
     return (
         <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
             <div className="max-w-7xl mx-auto px-4 space-y-16">
-                <div>
-                    <div className="text-center mb-8 sm:mb-12">
-                        <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">{t.title}</h2>
-                        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300">{t.subtitle}</p>
-                    </div>
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg dark:shadow-gray-900/30">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-gray-900 dark:text-white text-center">{t.question}</h3>
-                        <div className="space-y-6 sm:space-y-8">
-                            {Object.entries(t.moods).map(([type, moods]) => (
-                                <div
-                                    key={type}
-                                    className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 sm:gap-4"
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-lg dark:shadow-gray-900/30">
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8 text-gray-900 dark:text-white text-center">{t.question}</h3>
+                    <div className="space-y-6 sm:space-y-8">
+                        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+                            {[
+                                ...t.moods.positive,
+                                ...t.moods.negative
+                            ].map((mood) => (
+                                <motion.button
+                                    key={mood.name}
+                                    onClick={() => handleMoodSelect(mood)}
+                                    className={`relative flex flex-col items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl transition-all ${
+                                        selectedMood?.name === mood.name
+                                            ? 'bg-green-100 text-green-600'
+                                            : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
+                                    }`}
+                                    whileHover={{scale: 1.05}}
+                                    whileTap={{scale: 0.95}}
                                 >
-                                    {moods.map((mood) => (
-                                        <motion.button
-                                            key={mood.name}
-                                            onClick={() => handleMoodSelect(mood)}
-                                            className={`relative flex flex-col items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl transition-all ${
-                                                selectedMood?.name === mood.name
-                                                    ? 'bg-green-100 text-green-600'
-                                                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700'
-                                            }`}
-                                            whileHover={{ scale: 1.05 }}
-                                            whileTap={{ scale: 0.95 }}
+                                    <span className="text-3xl sm:text-4xl">{mood.emoji}</span>
+                                    <span className="text-sm sm:text-lg font-medium text-center">{mood.name}</span>
+                                    {selectedMood?.name === mood.name && showXP && (
+                                        <motion.div
+                                            initial={{opacity: 0, y: 20}}
+                                            animate={{opacity: 1, y: -20}}
+                                            exit={{opacity: 0}}
+                                            className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
                                         >
-                                            <span className="text-3xl sm:text-4xl">{mood.emoji}</span>
-                                            <span className="text-sm sm:text-lg font-medium">{mood.name}</span>
-                                            {selectedMood?.name === mood.name && showXP && (
-                                                <motion.div
-                                                    initial={{ opacity: 0, y: 20 }}
-                                                    animate={{ opacity: 1, y: -20 }}
-                                                    exit={{ opacity: 0 }}
-                                                    className="absolute -top-2 left-1/2 transform -translate-x-1/2 flex items-center gap-1"
-                                                >
-                                                    <Trophy className="w-5 sm:w-7 h-5 sm:h-7" />
-                                                    <span className="text-sm sm:text-lg font-medium">+{mood.xp} XP</span>
-                                                </motion.div>
-                                            )}
-                                        </motion.button>
-                                    ))}
-                                </div>
+                                            <Trophy className="w-5 sm:w-7 h-5 sm:h-7"/>
+                                            <span className="text-sm sm:text-lg font-medium">+{mood.xp} XP</span>
+                                        </motion.div>
+                                    )}
+                                </motion.button>
                             ))}
                         </div>
                     </div>
@@ -698,11 +690,12 @@ const MoodTracker = ({language = "English"}) => {
                                         <span className="text-gray-800 dark:text-gray-200">{challenge.task}</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <span className="text-sm text-gray-500 dark:text-gray-400">+{challenge.xp} XP</span>
+                                        <span
+                                            className="text-sm text-gray-500 dark:text-gray-400">+{challenge.xp} XP</span>
                                         {challenge.completed ? (
-                                            <Check className="w-5 h-5 text-green-500" />
+                                            <Check className="w-5 h-5 text-green-500"/>
                                         ) : (
-                                            <Clock className="w-5 h-5 text-gray-400 dark:text-gray-500" />
+                                            <Clock className="w-5 h-5 text-gray-400 dark:text-gray-500"/>
                                         )}
                                     </div>
                                 </div>
@@ -746,11 +739,11 @@ const MoodTracker = ({language = "English"}) => {
                             ))}
                         </motion.div>
                     </div>
+                </div>
             </div>
-        </div>
-</section>
-)
-    ;
+        </section>
+    )
+        ;
 };
 
 export default MoodTracker;
