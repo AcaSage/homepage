@@ -80,7 +80,7 @@ const translations = {
             aboutText:
                 "Redefining learning by delivering innovative academic tools and personalised wellness support. AcaSage is designed to address the evolving needs of students, aligning with SES 2023 insights on support, engagement, and mental health.",
             contactTitle: "Contact",
-            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, AU", "Dublin, IE"],
             followTitle: "Follow",
             followLinks: {
                 linkedin: "Follow us on LinkedIn",
@@ -125,7 +125,7 @@ const translations = {
             aboutText:
                 "Redefiniendo el aprendizaje al ofrecer herramientas académicas innovadoras y apoyo personalizado para el bienestar. AcaSage está diseñado para abordar las necesidades en evolución de los estudiantes, alineándose con los conocimientos de SES 2023 sobre apoyo, compromiso y salud mental.",
             contactTitle: "Contacto",
-            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, AU", "Dublin, IE"],
             followTitle: "Síguenos",
             followLinks: {
                 linkedin: "Síguenos en LinkedIn",
@@ -208,7 +208,7 @@ const translations = {
             aboutText:
                 "Redéfinir l'apprentissage en offrant des outils académiques innovants et un soutien personnalisé au bien-être. AcaSage est conçu pour répondre aux besoins en constante évolution des étudiants, en s'alignant sur les perspectives de SES 2023 concernant le soutien, l'engagement et la santé mentale.",
             contactTitle: "Contact",
-            contactDetails: ["founder@acasage.com", "Melbourne, Australie"],
+            contactDetails: ["founder@acasage.com", "Melbourne, AU", "Dublin, IE"],
             followTitle: "Suivez-nous",
             followLinks: {
                 linkedin: "Suivez-nous sur LinkedIn",
@@ -291,7 +291,7 @@ const translations = {
             aboutText:
                 "เรากำหนดรูปแบบการเรียนรู้ใหม่โดยมอบเครื่องมือการเรียนรู้ที่ล้ำสมัยและการสนับสนุนสุขภาพจิตที่ปรับให้เหมาะสม AcaSage ได้รับการออกแบบมาเพื่อตอบสนองความต้องการของนักเรียนที่พัฒนาไปเรื่อย ๆ โดยสอดคล้องกับข้อมูลเชิงลึกของ SES 2023 เกี่ยวกับการสนับสนุน การมีส่วนร่วม และสุขภาพจิต",
             contactTitle: "ติดต่อ",
-            contactDetails: ["founder@acasage.com", "เมลเบิร์น ออสเตรเลีย"],
+            contactDetails: ["founder@acasage.com", "เมลเบิร์น ออสเตรเลีย, ดับลิน, ไอร์แลนด์"],
             followTitle: "ติดตามเรา",
             followLinks: {
                 linkedin: "ติดตามเราบน LinkedIn",
@@ -374,7 +374,7 @@ const translations = {
             aboutText:
                 "Neudefinition des Lernens durch innovative akademische Werkzeuge und personalisierte Unterstützung für das Wohlbefinden. AcaSage wurde entwickelt, um den sich entwickelnden Bedürfnissen der Studierenden gerecht zu werden, basierend auf den Erkenntnissen von SES 2023 zu Unterstützung, Engagement und psychischer Gesundheit.",
             contactTitle: "Kontakt",
-            contactDetails: ["founder@acasage.com", "Melbourne, Australien"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australien, Dublin, Irland"],
             followTitle: "Folgen",
             followLinks: {
                 linkedin: "Folgen Sie uns auf LinkedIn",
@@ -457,7 +457,7 @@ const translations = {
             aboutText:
                 "Ridefinire l'apprendimento fornendo strumenti accademici innovativi e supporto personalizzato al benessere. AcaSage è progettato per rispondere alle esigenze in evoluzione degli studenti, in linea con le intuizioni di SES 2023 su supporto, coinvolgimento e salute mentale.",
             contactTitle: "Contatto",
-            contactDetails: ["founder@acasage.com", "Melbourne, Australia"],
+            contactDetails: ["founder@acasage.com", "Melbourne, Australia, Dublino, Irlanda"],
             followTitle: "Seguici",
             followLinks: {
                 linkedin: "Seguici su LinkedIn",
@@ -623,7 +623,7 @@ const translations = {
             aboutText:
                 "通过提供创新的学术工具和个性化的健康支持重新定义学习。AcaSage 的设计旨在满足学生不断变化的需求，并与 SES 2023 对支持、参与和心理健康的洞察保持一致。",
             contactTitle: "联系方式",
-            contactDetails: ["founder@acasage.com", "澳大利亚墨尔本"],
+            contactDetails: ["founder@acasage.com", "澳大利亚墨尔本, 爱尔兰都柏林"],
             followTitle: "关注我们",
             followLinks: {
                 linkedin: "在 LinkedIn 上关注我们",
