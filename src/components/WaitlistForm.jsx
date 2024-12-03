@@ -152,7 +152,7 @@ const WaitlistForm = () => {
         setError(null);
 
         try {
-            // Replace with your actual API endpoint
+            // Replace with actual API endpoint
             const response = await fetch('/api/waitlist', {
                 method: 'POST',
                 headers: {

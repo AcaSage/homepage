@@ -8,12 +8,12 @@ Visit the live application here: [AcaSage Live](https://acasage.github.io/homepa
 ---
 
 ## 🚀 Features
-- **Instant Academic Feedback**: Get actionable insights to improve learning in real-time.
-- **Emotional Well-being Support**: Monitor your mood and access tailored mental health resources.
-- **Collaborative Communities**: Engage in peer mentorship, study groups, and meaningful connections.
-- **Privacy and Security**: Fully encrypted data ensures your information remains confidential.
-- **Watermarked Documents**: Protect your intellectual property with secure watermarks.
-- **Cutting-edge AI Integration**: Leverage advanced AI for smarter learning and streamlined workflows.
+- **Instant Academic Feedback**: Get actionable insights to improve learning in real-time
+- **Emotional Well-being Support**: Monitor your mood and access tailored mental health resources
+- **Collaborative Communities**: Engage in peer mentorship, study groups, and meaningful connections
+- **Privacy and Security**: Fully encrypted data ensures your information remains confidential
+- **Watermarked Documents**: Protect your intellectual property with secure watermarks
+- **Cutting-edge AI Integration**: Leverage advanced AI for smarter learning and streamlined workflows
 
 ---
 
@@ -86,9 +86,9 @@ The output files will be located in the dist directory.
 
 🌟 Highlights
 
-	•	Dark Mode: Automatically adapts to user preferences with smooth transitions.
-	•	Responsive Design: Optimised for mobile, tablet, and desktop devices.
-	•	Multilingual Support: Available in English, Spanish, Thai, French, Arabic, and more.
+	•	Dark Mode: Automatically adapts to user preferences with smooth transitions
+	•	Responsive Design: Optimised for mobile, tablet, and desktop devices
+	•	Multilingual Support: Available in English
 
 📧 Contact
 
