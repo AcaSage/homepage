@@ -2,13 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
 import BgImage from './assets/bg.png';
-import DashBoard from './assets/db.png';
 import FD from './assets/anya.jpeg';
-import PodCast from './assets/db2.png';
 import { Book, Users, Award, ArrowRight, Star, Heart, Sun, Moon, Highlighter, ShieldCheck,
     Brain, Globe, ChevronDown, Send, Check, Linkedin, Youtube, Github, Rocket, TrendingUp
 } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 import MoodTracker   from "./components/MoodTracker.jsx";
 import KeyChallengesSection from "./components/KeyChallengesSection.jsx";
 
@@ -23,9 +20,9 @@ const translations = {
         ctaSubtitle: "Be among the first to try AcaSage and make a difference",
         joinWaitlist: "Get on the waitlist",
         learnMore: "Investors — let's talk!",
-        founderTitle: "About the Founder",
+        founderTitle: "Building AcaSage",
         founderDescription:
-            "When I struggled to find personalised academic support as a student, I decided to take action. Using my skills as a software developer and insights from my journey, I created AcaSage — a learning companion designed to adapt to each student’s individual path to success",
+            "Education and mental health exist in this delicate balance. Technology can either strengthen or strain that relationship. With AcaSage, we're trying to ensure it’s the former",
         linkedin: "Connect on LinkedIn",
         github: "Follow on GitHub",
         youtube: "Follow on YouTube",
@@ -68,10 +65,10 @@ const translations = {
         ctaSubtitle: "เป็นคนแรกๆ ที่ได้ลอง AcaSage และสร้างความเปลี่ยนแปลง",
         joinWaitlist: "รับสิทธิ์เข้าถึงก่อนใคร",
         learnMore: "สำรวจการพัฒนาของเรา",
-        founderTitle: "เกี่ยวกับผู้ก่อตั้ง",
+        founderTitle: "การก่อตั้ง AcaSage",
         founderDescription:
-            "เมื่อฉันประสบปัญหาในการหาการสนับสนุนทางวิชาการที่ปรับให้เหมาะสมกับตัวเองในฐานะนักเรียน ฉันจึงตัดสินใจลงมือทำ ด้วยทักษะในฐานะนักพัฒนาซอฟต์แวร์และข้อมูลเชิงลึกจากการเดินทางของฉัน ฉันได้สร้าง AcaSage — เพื่อนร่วมการเรียนรู้ที่ออกแบบมาเพื่อปรับให้เข้ากับเส้นทางเฉพาะตัวของนักเรียนแต่ละคนสู่ความสำเร็จ",
-        linkedin: "เชื่อมต่อกับ LinkedIn",
+            "การศึกษาและสุขภาพจิตมีความสัมพันธ์ที่ละเอียดอ่อน เทคโนโลยีอาจช่วยเสริมสร้างหรือทำลายความสัมพันธ์นี้ได้ ที่ AcaSage เรามุ่งมั่นให้เทคโนโลยีเป็นตัวเสริมสร้าง",
+        linkedin: "ติดตามบน LinkedIn",
         github: "ติดตามบน GitHub",
         youtube: "ติดตามบน YouTube",
 
@@ -309,70 +306,6 @@ const AcaSagePage = () => {
                 {/* Mood Tracker */}
                 <MoodTracker language={language}/>
 
-                {/* App Preview */}
-                <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
-                    <div className="max-w-7xl mx-auto px-4">
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8">
-                            <div className="relative group">
-                                <div
-                                    className="absolute -inset-1 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-200"></div>
-                                <img
-                                    src={DashBoard}
-                                    alt="AcaSage Dashboard"
-                                    className="rounded-lg shadow-2xl relative dark:shadow-gray-900/30"
-                                />
-                            </div>
-                            <div className="mt-8 grid md:grid-cols-4 gap-4">
-                                {[
-                                    "Smart study plan",
-                                    "Wellness support",
-                                    "Podcast mode",
-                                    "Peer review"
-                                ].map((feature, index) => (
-                                    <div key={index} className="flex items-center gap-2">
-                                        <Check className="w-10 h-10 text-green-500"/>
-                                        <span className="text-xl font-medium text-gray-800 dark:text-gray-200">
-                            {feature}
-                        </span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Podcast Preview */}
-                <section className="py-20 bg-white dark:bg-gray-900 transition-colors duration-200">
-                    <div className="max-w-7xl mx-auto px-4">
-                        <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-8">
-                            <div className="relative group">
-                                <div
-                                    className="absolute -inset-1 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-200"></div>
-                                <img
-                                    src={PodCast}
-                                    alt="AcaSage Dashboard"
-                                    className="rounded-lg shadow-2xl relative dark:shadow-gray-900/30"
-                                />
-                            </div>
-                            <div className="mt-8 grid md:grid-cols-4 gap-4">
-                                {[
-                                    "Peer profile",
-                                    "Categorisation",
-                                    "Visual summary",
-                                    "Privacy control"
-                                ].map((feature, index) => (
-                                    <div key={index} className="flex items-center gap-2">
-                                        <Check className="w-10 h-10 text-green-500"/>
-                                        <span className="text-xl font-medium text-gray-800 dark:text-gray-200">
-                            {feature}
-                        </span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 {/* Founder Section */}
                 <section className="py-20 bg-white dark:bg-gray-800">
                     <div className="max-w-7xl mx-auto px-4">
@@ -382,7 +315,7 @@ const AcaSagePage = () => {
                                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">{t.founderDescription}</p>
                                 <div className="flex gap-7 mt-14">
                                     <a
-                                        href="https://linkedin.com/in/anyachueayen"
+                                        href="https://linkedin.com/in/anya-pc"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-orange-500 hover:text-orange-600 transition-colors"

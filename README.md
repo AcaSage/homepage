@@ -34,30 +34,25 @@ Ensure you have the following installed on your system:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ### Installation Steps
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/AcaSage/homepage.git
-   cd homepage
-    ```
 
-2. Install dependencies:
+1. Install dependencies:
 
 ```npm install```
 
 
-3.	Start the development server:
+2.	Start the development server:
 
 ```npm run dev```
 
 The application will be live at http://localhost:5173.
 
-4.	Build for production:
+3. Build for production:
 
 ```npm run build```
 
 The output files will be located in the dist directory.
 
-5.	Deploy to GitHub Pages:
+4.	Deploy to GitHub Pages:
 
 ```npm run deploy```
 
